@@ -16,9 +16,15 @@ let flag = true;
 const animation = () => {
     if(flag) {
         document.body.style.backgroundColor = "skyblue"
+        document.body.children[2].style.color = "blue"
     } else {
         document.body.style.backgroundColor = "tomato"
+        document.body.children[2].style.color = "yellow"
     }
     flag = !flag
 }
-setInterval(animation,1000)
+
+setInterval(animation,1000);
+
+
+
