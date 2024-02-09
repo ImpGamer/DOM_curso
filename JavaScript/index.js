@@ -12,19 +12,13 @@ document.body.children[1].children[0].innerText = route
 //Aqui si accedemos al archivo CSS incluso lo modificamos
 //document.styleSheets[0].cssRules[0].style.backgroundColor = "skyblue"
 
-let flag = true;
 const animation = () => {
-    if(flag) {
-        document.body.style.backgroundColor = "skyblue"
-        document.body.children[2].style.color = "blue"
-    } else {
+    if(document.body.style.backgroundColor === "skyblue") {
         document.body.style.backgroundColor = "tomato"
         document.body.children[2].style.color = "yellow"
+    } else {
+        document.body.style.backgroundColor = "skyblue"
+        document.body.children[2].style.color = "blue"
     }
-    flag = !flag
 }
-
-setInterval(animation,1000);
-
-
-
+setInterval(animation,1000)
