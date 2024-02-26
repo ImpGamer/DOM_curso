@@ -1,0 +1,43 @@
+.main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: #020101;
+    color: #fff;
+    transition: left 1s ease-out;
+}
+#menu-show {
+    font-size: 15px;
+    margin: 20px;
+    background-color: transparent;
+    color: #020101;
+    border-width: 0;    
+}
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+}
+.main-menu li {
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+.main-menu button {
+    background-color: #020101;
+    color: #fff;
+}
+.hide {
+    left: -200px;
+}
+
+.main-menu li:last-child {
+    border-bottom: none;
+}
+.main-menu a {
+    text-decoration: none;
+    color: #fff;
+}
